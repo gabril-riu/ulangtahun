@@ -202,9 +202,13 @@ h2 span:nth-child(14) {
   }
 }
 
-#body-1 {
+#body-1{
+  background-color: mediumorchid;
+  padding: 50px 0;
+}
+
+#body-2 {
   background-color: #a91ce5;
-  height: 100vh;
   padding: 50px 0;
 }
 
