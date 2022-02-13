@@ -5,15 +5,23 @@
   margin: 0;
 }
 
+#arrows{
+  display: block;
+}
+
 .intro{
+  position: relative;
   font-size: 64px;
   font-family: 'Courgette', cursive;
-  height: 110vh;
+  height: 100vh;
   width: 100%;
   padding-top: 50%;
   color: white;
 }
 
+.text-ucapan-0{
+  background-color: #e40d9c;
+}
 .text-ucapan-1{
   background-color: #cc2b5e;
 }
@@ -23,8 +31,35 @@
 .text-ucapan-3{
   background-color: #ff02c8;
 }
+.text-ucapan-3-1{
+  background-color: #e000b0;
+}
 .text-ucapan-4{
   background-color: #cc2b5e;
+}
+.text-ucapan-5{
+  background-color: #b13b61;
+}
+.text-ucapan-5-1{
+  background-color: #f53370;
+}
+.text-ucapan-5-2{
+  background-color: #e40aa3;
+}
+.text-ucapan-6{
+  background-color: #aa2c8f;
+}
+.text-ucapan-7{
+  background-color: #e22e88;
+}
+.text-ucapan-8{
+  background-color: #e431f5;
+}
+.text-ucapan-9{
+  background-color: #aa2c8f;
+}
+.text-ucapan-9-1{
+  background-color: #b82368;
 }
 
 #landing {
@@ -60,6 +95,11 @@
   margin: 50% 0;
 }
 
+.panah{
+  position: relative;
+  -webkit-animation: myfirst 1.5s ease-in-out infinite;
+}
+
 #baloons {
   display: inline-block;
 }
@@ -77,6 +117,18 @@
   z-index: 0;
   animation: balloons 4s ease-in-out infinite;
   transform-origin: bottom center;
+}
+
+@keyframes myfirst {
+  
+  50% {
+    transform: translateY(150px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+
 }
 
 @keyframes balloons {
@@ -258,11 +310,22 @@ h2 span:nth-child(14) {
   font-weight: 500;
 }
 
-footer{
-  padding: 50px 0;
+#body-3 {
+  padding: 15% 0;
+  font-weight: 500;
+  height: 50vh;
   background: #cc2b5e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #a91ce5, #cc2b5e);  
-  background: linear-gradient(to bottom, #a91ce5, #cc2b5e); 
+  background: -webkit-linear-gradient(to bottom, #a91ce5, #ff00cc);  
+  background: linear-gradient(to bottom, #a91ce5, #ff00cc); 
+  color: white;
+}
+
+
+footer{
+  padding: 10% 0;
+  background: #ff00cc;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #333399, #ff00cc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #333399, #ff00cc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   position: relative;
 }
