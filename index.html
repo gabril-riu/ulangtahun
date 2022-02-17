@@ -17,9 +17,9 @@
     <script src="https://kit.fontawesome.com/28f55d6e03.js" crossorigin="anonymous"></script>
 
     <!-- Music -->
-    <audio autoplay loop>
+    <!-- <audio autoplay loop>
       <source src="music/ulangTahun.mp3" type="audio/mpeg">
-    </audio>
+    </audio> -->
 
     <title>Happy BirthDay!</title>
   </head>
@@ -42,7 +42,9 @@
     <section class="text-ucapan-1 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-1">Hai sayang...</h1>
+          <h1 class="text-center text-ke-1 text-ke">
+            Hai sayang...
+          </h1>
         </div>
       </div>
     </section>
@@ -50,7 +52,7 @@
     <section class="text-ucapan-2 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-2"> 
+          <h1 class="text-center text-ke-2 text-ke"> 
             tak terasa ya hari ini adalah hari yang istimewa
           </h1>
         </div>
@@ -60,7 +62,7 @@
     <section class="text-ucapan-3 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-3">
+          <h1 class="text-center text-ke-3 text-ke">
              yaitu hari dimana yang dinantikan oleh kebanyakan orang
           </h1>
         </div>
@@ -70,7 +72,7 @@
     <section class="text-ucapan-3-1 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-3">
+          <h1 class="text-center text-ke-3 text-ke">
              mungkin bagimu hari ini seperti hari - hari biasanya
           </h1>
         </div>
@@ -80,7 +82,7 @@
     <section class="text-ucapan-4 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-4">
+          <h1 class="text-center text-ke-4 text-ke">
             tetapi hari ini adalah hari dimana engkau bertambah +1 umurmu
           </h1>
         </div>
@@ -90,7 +92,7 @@
     <section class="text-ucapan-5 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-5">
+          <h1 class="text-center text-ke-5 text-ke">
             Senang rasanya masih bersama dengan orang dan perasaan yang sama
           </h1>
         </div>
@@ -100,7 +102,7 @@
     <section class="text-ucapan-5-1 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-5">
+          <h1 class="text-center text-ke-5 text-ke">
             sehingga aku masih bisa terus melihat tumbuh kembangmu
           </h1>
         </div>
@@ -110,7 +112,7 @@
     <section class="text-ucapan-5-2 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-5">
+          <h1 class="text-center text-ke-5 text-ke">
             melihat engkau menjadi wanita yang kuat &#9994
           </h1>
         </div>
@@ -120,7 +122,7 @@
     <section class="text-ucapan-6 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-6">
+          <h1 class="text-center text-ke-6 text-ke">
             di slide selanjutnya ada kejutan kecil dariku kuharap engkau suka 
           </h1>
         </div>
@@ -130,7 +132,7 @@
     <section class="text-ucapan-7 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-6">
+          <h1 class="text-center text-ke-6 text-ke">
             1
           </h1>
         </div>
@@ -140,7 +142,7 @@
     <section class="text-ucapan-8 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-6">
+          <h1 class="text-center text-ke-6 text-ke">
             2
           </h1>
         </div>
@@ -150,7 +152,7 @@
     <section class="text-ucapan-9 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-6">
+          <h1 class="text-center text-ke-6 text-ke">
             3
           </h1>
         </div>
@@ -160,7 +162,7 @@
     <section class="text-ucapan-9-1 intro">
       <div class="container">
         <div class="col-lg-12">
-          <h1 class="text-center text-ke-6">
+          <h1 class="text-center text-ke-6 text-ke">
             aku Ucapkan
           </h1>
         </div>
@@ -242,11 +244,50 @@
     </section>
 
     <section id="body-2">
+      <div class="container text-center">
+        <div class="col-lg-12">
+          <h2 class="mb-3 tes">
+            Tuliskan Harapanmu disini
+          </h2>
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            klik
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="exampleModalLabel">Modal title</h2>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <label for="floatingTextarea2">Comments</label>
+                    <textarea class="form-control" placeholder="Tuliskan Harapanmu" id="urWish" style="height: 100px"></textarea>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                  <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="ucapan()">Selesai</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal-->
+        </div>
+      </div>
+    </section>
+
+    <section id="body-2-1">
       <div class="container">
         <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
-              <h1 class="text-center">Wish Card</h1>
+              <h1 class="text-center">Ucapan</h1>
+              <p id="urWish1">testing</p>
+              <p class="spasi text-center"><b>ini ucapan dariku</b></p>
               <p>Selamat Ulang Tahun Sayang. Semoga apa yang kamu cita-citakan segera terwujud, 
                 dan juga sehat selalu. ibadahnya ditingkatkan lagi, sayangnya ditambah terutama kepada 
                 keluarga intimu. baru habis itu aku hahaha &#128516,
@@ -266,7 +307,7 @@
       <div class="container text-center">
         <div class="col-lg-12">
           <h1 class="credit">
-            maaf masig terdapat banyak kekurangan, Aku ucapkan Terima Kasih
+            maaf masih terdapat banyak kekurangan, Aku ucapkan Terima Kasih
           </h1>
         </div>
       </div>
@@ -298,12 +339,11 @@
 
     <script>
 
-      function mantap(){
-        $("textarea").valHooks.textarea = {
-          get: function( elem ) {
-            return elem.value.replace( /\r?\n/g, "\r\n" );
-          }
-        };
+      function ucapan(){
+        const text = $("#urWish").val();
+        let hasilText = $("#urWish1");
+         
+         hasilText.text(text);
       }
 
       //Animation Scroll reveral
