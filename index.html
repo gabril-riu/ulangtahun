@@ -246,13 +246,15 @@
     <section id="body-2">
       <div class="container text-center">
         <div class="col-lg-12">
-          <h2 class="mb-3 tes">
-            Tuliskan Harapanmu disini
+          <h2 class="mb-5 tes">
+            Tuliskan Harapanmu
           </h2>
           <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            klik
+          <button type="button" class="btn btn-primary mb-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            klik disini
           </button>
+
+          <h2 class="tes">Dan lihat apa yang terjadi selanjutya &#128516</h2>
 
           <!-- Modal -->
           <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -285,20 +287,29 @@
         <div class="col-lg-12">
           <div class="card">
             <div class="card-body">
-              <h1 class="text-center">Ucapan</h1>
-              <p id="urWish1">testing</p>
-              <p class="spasi text-center"><b>ini ucapan dariku</b></p>
-              <p>Selamat Ulang Tahun Sayang. Semoga apa yang kamu cita-citakan segera terwujud, 
-                dan juga sehat selalu. ibadahnya ditingkatkan lagi, sayangnya ditambah terutama kepada 
-                keluarga intimu. baru habis itu aku hahaha &#128516,
-                pokoknya yang terpenting bahagia selalu &#128151,
-                haya itu yang bisa aku ucapkan, Maaf kalo aku masih belum bisa menjadi
-                seperti apa yang kamu mau, dan juga belum bisa membahagiakanmu &#128511,
-                Semoga bertambahnya umurmu ini semua masalahmu dapat terselesaikan semuanya &#128151,
-                dan aku Ucapkan <strong><em>Happy BirthDay</em></strong>&#127881&#127873
-              </p>
+              <h1 class="text-center">Harapan</h1>
+              <p id="urWish1" class="text-center">testing</p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="body-2-2">
+      <div class="container">
+        <div class="col-lg-12">
+          <em>
+            <p class="spasi text-center"><b>Harapan dariku</b></p>
+            <p>Selamat Ulang Tahun Sayang. Semoga apa yang kamu Tulis tadi segera terwujud, 
+              dan juga sehat selalu. ibadahnya ditingkatkan lagi, sayangnya ditambah terutama kepada 
+              keluarga. baru habis itu aku hahaha </em> &#128516 <em>,
+              pokoknya yang terpenting bahagia selalu </em> &#128151 <em>,
+              hanya itu yang bisa aku ucapkan, Maaf kalo aku masih belum bisa menjadi
+              seperti apa yang kamu mau, dan juga belum bisa membahagiakanmu </em> &#128511 <em>,
+              Semoga bertambahnya umurmu ini semua masalahmu dapat terselesaikan semuanya </em> &#128151 <em>,
+              dan aku Ucapkan </em><strong><em>Happy BirthDay Sayang</em></strong>&#127881&#127873
+            </p>
+        
         </div>
       </div>
     </section>
@@ -307,7 +318,7 @@
       <div class="container text-center">
         <div class="col-lg-12">
           <h1 class="credit">
-            maaf masih terdapat banyak kekurangan, Aku ucapkan Terima Kasih
+            maaf masih terdapat banyak kekurangan, Sekian dariku Terima Kasih
           </h1>
         </div>
       </div>
@@ -336,57 +347,7 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-    <script>
-
-      function ucapan(){
-        const text = $("#urWish").val();
-        let hasilText = $("#urWish1");
-         
-         hasilText.text(text);
-      }
-
-      //Animation Scroll reveral
-      var animation = {
-        distance: '100%',
-        origin : "left",
-        opacity: 0.5,
-        delay: 700,
-        reset: true,
-      }
-      var animation1 = {
-        distance: '100%',
-        origin : "right",
-        delay: 900,
-        opacity: 0.5,
-        reset: true,
-      }
-      var animation2 = {
-        distance: '250px',
-        origin : "bottom",
-        delay: 1100,
-        opacity: 0.5,
-        reset: false,
-      }
-
-      let animation3 = {
-        distance: '250px',
-        origin: 'bottom',
-        delay: 600,
-        opacity: 0,
-        reset:true,
-      }
-
-      ScrollReveal().reveal(".ucapan", animation);
-      ScrollReveal().reveal(".name-user", animation1);
-      ScrollReveal().reveal(".deco-kue", animation2);
-      ScrollReveal().reveal(".text-ke-1", animation3);
-      ScrollReveal().reveal(".text-ke-2", animation3);
-      ScrollReveal().reveal(".text-ke-3", animation3);
-      ScrollReveal().reveal(".text-ke-4", animation3);
-      ScrollReveal().reveal(".text-ke-5", animation3);
-      ScrollReveal().reveal(".text-ke-6", animation3);
-    </script>
+    <script src="index.js"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
