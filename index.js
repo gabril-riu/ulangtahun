@@ -15,9 +15,13 @@ function ucapan() {
   tampilan4.attr("style", "display: inherit; visibility: visible;");
   tampilan5.attr("style", "display: inherit; visibility: visible;");
 
+  tampilan3.show(4000);
+
   hasilText.html(
     `${text}  <br> ___ <br> semoga harapanmu yang di atas ini satu persatu di kabulkan oleh Tuhan Yang Maha Esa`
   );
+
+  typewriter();
 }
 
 //Animation Scroll reveral
@@ -61,11 +65,45 @@ ScrollReveal().reveal(".text-ke-4", animation3);
 ScrollReveal().reveal(".text-ke-5", animation3);
 ScrollReveal().reveal(".text-ke-6", animation3);
 
-// Song auto play
-
-window.addEventListener("DOMContentLoaded", event => {
-  const audio = document.querySelector("audio");
-  audio.volume = 0.5;
-  audio.play();
-});
+var aText = new Array(
+  "<em>Selamat Ulang Tahun Sayang. Semoga apa yang kamu Tulis tadi segera terwujud,", 
+  "dan juga sehat selalu. ibadahnya ditingkatkan lagi, sayangnya ditambah terutama kepada", 
+  "keluarga. baru habis itu aku hahaha </em> &#128516",
+  "<em>pokoknya yang terpenting bahagia selalu </em> &#128151",
+  "<em>hanya itu yang bisa aku ucapkan, Maaf kalo aku masih belum bisa menjadi",
+  "seperti apa yang kamu mau, dan juga belum bisa membahagiakanmu </em> &#128511",
+  "<em>Semoga bertambahnya umurmu ini aku berharap semua masalahmu dapat terselesaikan semuanya </em> &#128151 <em>,",
+  "dan aku Ucapkan </em><strong><em>Happy BirthDay Sayang</em></strong>&#127881&#127873",
+  );
+  var iSpeed = 100; // time delay of print out
+  var iIndex = 0; // start printing array at this posision
+  var iArrLength = aText[0].length; // the length of the text array
+  var iScrollAt = 20; // start scrolling up at this many lines
+   
+  var iTextPos = 0; // initialise text position
+  var sContents = ''; // initialise contents variable
+  var iRow; // initialise current row
+   
+  function typewriter()
+  {
+   sContents =  ' ';
+   iRow = Math.max(0, iIndex-iScrollAt);
+   var destination = document.getElementById("harapanku");
+   
+   while ( iRow < iIndex ) {
+    sContents += aText[iRow++] + '<br />';
+   }
+   destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
+   if ( iTextPos++ == iArrLength ) {
+    iTextPos = 0;
+    iIndex++;
+    if ( iIndex != aText.length ) {
+     iArrLength = aText[iIndex].length;
+     setTimeout("typewriter()", 500);
+    }
+   } else {
+    setTimeout("typewriter()", iSpeed);
+   }
+  }
+  
 
