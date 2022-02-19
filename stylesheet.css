@@ -330,26 +330,28 @@ h2 span:nth-child(14) {
 }
 
 #body-2-1 {
-  /* display: none; */
-  background-color: #bd2afc;
-  background: -webkit-linear-gradient(to bottom, #bd2afc, #a91ce5);  
-  background: linear-gradient(to bottom, #bd2afc, #a91ce5); 
-  padding: 250px 0;
+  background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #E100FF, #bd2afc);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #E100FF, #bd2afc); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+font-size: 20px;
+  padding: 100px 0;
   font-weight: 500;
   height: 100vh;
-  /* display: none;
-  visibility: hidden; */
+  display: none;
+  visibility: hidden;
 }
 
 #body-2-2 {
   /* display: none; */
-  background-color: #bd2afc;
-  background: -webkit-linear-gradient(to bottom, #bd2afc, #a91ce5);  
-  background: linear-gradient(to bottom, #bd2afc, #a91ce5); 
+  background: #7F00FF;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #E100FF, #7F00FF);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #E100FF, #7F00FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ height: 100vh;
   padding: 50px 0;
   font-weight: 500;
   font-size: 20px;
   text-align: center;
+  text-shadow: 6px 8px 14px rgba(0,0,0,0.6);
   color: white;
   display: none;
   visibility: hidden;
@@ -361,9 +363,10 @@ h2 span:nth-child(14) {
   font-weight: 500;
   height: 50vh;
   background: #cc2b5e;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to bottom, #a91ce5, #ff00cc);  
-  background: linear-gradient(to bottom, #a91ce5, #ff00cc); 
+  background: -webkit-linear-gradient(to bottom, #7F00FF, #ff00cc);  
+  background: linear-gradient(to bottom, #7F00FF, #ff00cc); 
   color: white;
+  text-shadow: 6px 8px 14px rgba(0,0,0,0.6);
   display: none;
   visibility: hidden;
 }

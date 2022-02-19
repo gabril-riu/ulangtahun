@@ -60,3 +60,12 @@ ScrollReveal().reveal(".text-ke-3", animation3);
 ScrollReveal().reveal(".text-ke-4", animation3);
 ScrollReveal().reveal(".text-ke-5", animation3);
 ScrollReveal().reveal(".text-ke-6", animation3);
+
+// Song auto play
+
+window.addEventListener("DOMContentLoaded", event => {
+  const audio = document.querySelector("audio");
+  audio.volume = 0.5;
+  audio.play();
+});
+
